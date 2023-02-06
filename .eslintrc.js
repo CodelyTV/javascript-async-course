@@ -1,9 +1,5 @@
 module.exports = {
-  parser: "@typescript-eslint/parser",
-  extends: [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-  ],
+  extends: ["plugin:prettier/recommended"],
   plugins: ["simple-import-sort", "import"],
   parserOptions: {
     ecmaVersion: 12,
@@ -16,4 +12,11 @@ module.exports = {
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
   },
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx"],
+      parser: "@typescript-eslint/parser",
+      extends: ["plugin:@typescript-eslint/recommended"],
+    },
+  ],
 };

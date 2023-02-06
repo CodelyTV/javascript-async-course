@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Bootstrap your new TypeScript project with the bare minimum dependencies",
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore . --ext .ts",
+    "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "npm run lint -- --fix",
     "test": "jest"
   },
