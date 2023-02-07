@@ -5,7 +5,6 @@ import * as path from "path";
 import { getUsersFromApi } from "./getUsersFromApi.js";
 
 const file = path.resolve("./users.json");
-console.log(file);
 
 writeFilePromisified(file, "")
   .then(getUsersFromApi)
