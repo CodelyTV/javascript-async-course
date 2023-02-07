@@ -11,7 +11,7 @@ writeFile(
     appendFileData(copyFileToDestination(removeFile(logProcessFinished)))
   )
 );
-1
+
 function appendFileData(callback) {
   return function (users) {
     appendFile(file, JSON.stringify(users), callback);
