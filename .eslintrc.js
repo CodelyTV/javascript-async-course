@@ -2,7 +2,7 @@ module.exports = {
   extends: ["plugin:prettier/recommended"],
   plugins: ["simple-import-sort", "import"],
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 2022,
     sourceType: "module",
   },
   rules: {
