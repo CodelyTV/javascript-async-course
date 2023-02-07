@@ -2,6 +2,7 @@
   "name": "typescript-basic-skeleton",
   "version": "2.0.0",
   "description": "Bootstrap your new TypeScript project with the bare minimum dependencies",
+  "type": "module",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "npm run lint -- --fix",
