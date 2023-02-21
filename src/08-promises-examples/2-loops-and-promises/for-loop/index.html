@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sakura.css/css/sakura.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./loader.css" type="text/css" />
+    <title>Promise all</title>
+
+    <style>
+      section {
+        display: flex;
+        gap: 1rem;
+      }
+
+      section article {
+        flex: 1;
+        border-radius: 0.25rem;
+        text-align: center;
+        background-color: rgb(208, 233, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Customer dashboard</h1>
+
+    <section>
+      <article id="customers">
+        <h5>Total Customers</h5>
+        <div class="loader lds-dual-ring"></div>
+        <p class="metric"></p>
+      </article>
+      <article id="revenue">
+        <h5>Monthly revenue</h5>
+        <div class="loader lds-dual-ring"></div>
+        <p class="metric"></p>
+      </article>
+      <article id="incidents">
+        <h5>Open incidents</h5>
+        <div class="loader lds-dual-ring"></div>
+        <p class="metric"></p>
+      </article>
+    </section>
+
+    <script type="module" src="./forLoop.js"></script>
+  </body>
+</html>
