@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sakura.css/css/sakura.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./loader.css" type="text/css" />
+    <title>Promise all example</title>
+  </head>
+  <body>
+    <h1>User dashboard</h1>
+
+    <section>
+      <h5>User info</h5>
+      <ul>
+        <li>Name: <span id="userName"></span></li>
+        <li>Email: <span id="userEmail"></span></li>
+      </ul>
+
+      <h5>User enrolled courses</h5>
+      <ul id="courses"></ul>
+    </section>
+
+    <script type="module" src="./sequentially.js"></script>
+  </body>
+</html>
