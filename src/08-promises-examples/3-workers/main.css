@@ -1,0 +1,25 @@
+@keyframes example {
+  0% {
+      left: 0;
+  }
+
+  50% {
+      left: 100%;
+  }
+
+  100% {
+      left: 0;
+  }
+}
+
+.animated {
+  margin-top: 5rem;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 8s;
+  animation-iteration-count:infinite;
+  position: relative;
+  margin-bottom: 20px;
+}
