@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sakura.css/css/sakura.css"
+      type="text/css"
+    />
+
+    <title>Websockets example</title>
+  </head>
+  <body>
+    <h1>Websockets example</h1>
+
+    <form id="chatForm">
+      <label for="messageInput">Chat box:</label>
+      <input id="messageInput" name="messageInput" placeholder="Message" />
+      <input id="sendMessage" type="submit" value="Send message" />
+    </form>
+
+    <section>
+      <h2>Received messages</h2>
+      <ul id="messageList"></ul>
+    </section>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
