@@ -1,0 +1,15 @@
+section {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1;
+  max-width: 25%;
+}
+
+.card img {
+  max-height: 200px;
+  margin-bottom: 0;
+  width: auto;
+}
