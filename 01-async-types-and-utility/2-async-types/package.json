@@ -1,0 +1,12 @@
+{
+  "name": "2-async-types",
+  "version": "1.0.0",
+  "description": "",
+  "main": "callbacks.js",
+  "scripts": {
+    "start": "node callbacks.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

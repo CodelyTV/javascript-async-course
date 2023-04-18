@@ -1,0 +1,26 @@
+{
+  "name": "rxjs-example",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodelyTV/typescript-basic-skeleton.git"
+  },
+  "author": "codelytv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodelyTV/typescript-basic-skeleton/issues"
+  },
+  "homepage": "https://github.com/CodelyTV/typescript-basic-skeleton#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.0"
+  }
+}

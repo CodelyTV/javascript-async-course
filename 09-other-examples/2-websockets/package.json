@@ -1,0 +1,28 @@
+{
+  "name": "websockets-example",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "node server/index.js",
+    "dev:client": "parcel client/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodelyTV/typescript-basic-skeleton.git"
+  },
+  "author": "codelytv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodelyTV/typescript-basic-skeleton/issues"
+  },
+  "homepage": "https://github.com/CodelyTV/typescript-basic-skeleton#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "ws": "^8.13.0"
+  }
+}
