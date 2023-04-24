@@ -7,19 +7,19 @@ const file = "./users.json";
 writeFile(file, "", writeFileData);
 
 function writeFileData() {
-  getUsersFromApi(saveFileData);
+	getUsersFromApi(saveFileData);
 }
 
 function saveFileData(users) {
-  appendFile(file, JSON.stringify(users), appendDataInFile);
+	appendFile(file, JSON.stringify(users), appendDataInFile);
 }
 
 function appendDataInFile() {
-  copyFile(file, "../dest.json", deleteFile);
+	copyFile(file, "../dest.json", deleteFile);
 }
 
 function deleteFile() {
-  unlink(file, () => {
-    console.log("Process finished!");
-  });
+	unlink(file, () => {
+		console.log("Process finished!");
+	});
 }

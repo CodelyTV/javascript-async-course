@@ -14,9 +14,9 @@ await unlink(file);
 console.log("Process finished!");
 
 function writeFilePromisified(path, data) {
-  return new Promise((resolve) => {
-    writeFile(path, data, () => {
-      resolve();
-    });
-  });
+	return new Promise((resolve) => {
+		writeFile(path, data, () => {
+			resolve();
+		});
+	});
 }

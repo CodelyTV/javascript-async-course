@@ -1,4 +1,5 @@
 module.exports = {
+	root: true,
 	extends: ["react-app", "react-app/jest", "eslint-config-codely/typescript"],
 	settings: {
 		"import/resolver": {
@@ -9,7 +10,7 @@ module.exports = {
 	},
 	overrides: [
 		{
-			files: ["**/*.ts"],
+			files: ["**/*.ts", "**/*.tsx"],
 			parserOptions: {
 				project: ["./tsconfig.json"],
 			},

@@ -1,15 +1,15 @@
 function searchBooks() {
-  const controller = new AbortController();
+	const controller = new AbortController();
 
-  const query = (search) =>
-    fetch(`https://gutendex.com/books?search=${search}`, {
-      signal: controller.signal,
-    }).then((response) => response.json());
+	const query = (search) =>
+		fetch(`https://gutendex.com/books?search=${search}`, {
+			signal: controller.signal,
+		}).then((response) => response.json());
 
-  return {
-    controller,
-    query,
-  };
+	return {
+		controller,
+		query,
+	};
 }
 
 const { query, controller } = searchBooks();
@@ -21,28 +21,28 @@ let ctr;
 let timeout;
 
 input.addEventListener("input", (event) => {
-  if (timeout) {
-    clearTimeout(timeout);
-  }
+	if (timeout) {
+		clearTimeout(timeout);
+	}
 
-  timeout = setTimeout(() => {
-    if (ctr) {
-      ctr.abort();
-    }
+	timeout = setTimeout(() => {
+		if (ctr) {
+			ctr.abort();
+		}
 
-    const { query, controller } = searchBooks();
-    ctr = controller;
+		const { query, controller } = searchBooks();
+		ctr = controller;
 
-    console.log(event.target.value);
-    query(event.target.value)
-      .then((response) => {
-        books.innerHTML = "";
-        response.results.forEach((book) => {
-          books.innerHTML += `<li>${book.title}</li>`;
-        });
-      })
-      .catch(() => {
-        console.log("fetch cancelado");
-      });
-  }, 500);
+		console.log(event.target.value);
+		query(event.target.value)
+			.then((response) => {
+				books.innerHTML = "";
+				response.results.forEach((book) => {
+					books.innerHTML += `<li>${book.title}</li>`;
+				});
+			})
+			.catch(() => {
+				console.log("fetch cancelado");
+			});
+	}, 500);
 });

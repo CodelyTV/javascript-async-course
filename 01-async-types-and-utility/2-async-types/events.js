@@ -1,13 +1,11 @@
 document.addEventListener("itemAdded", (ev) => {
-  console.log(ev.detail);
+	console.log(ev.detail);
 });
 
 const button = document.getElementById("cartButton");
 
 button.addEventListener("click", (ev) => {
-  const itemId = ev.target.dataset.itemid;
+	const itemId = ev.target.dataset.itemid;
 
-  document.dispatchEvent(
-    new CustomEvent("itemAdded", { detail: { item: itemId } })
-  );
+	document.dispatchEvent(new CustomEvent("itemAdded", { detail: { item: itemId } }));
 });

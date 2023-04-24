@@ -11,7 +11,7 @@ userName.innerHTML = userInfo.name;
 userEmail.innerHTML = userInfo.email;
 
 enrolledCourses.forEach((course) => {
-  const listItem = document.createElement("li");
-  listItem.innerHTML = course.title;
-  courses.appendChild(listItem);
+	const listItem = document.createElement("li");
+	listItem.innerHTML = course.title;
+	courses.appendChild(listItem);
 });

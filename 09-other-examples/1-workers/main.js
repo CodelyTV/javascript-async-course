@@ -9,17 +9,17 @@ const nPrimeWorkerButton = document.getElementById("nPrimeWorkerButton");
 const myWorker = new Worker("worker.js", { type: "module" });
 
 nPrimeMainButton.onclick = () => {
-  const nPrime = parseInt(nPrimeMainInput.value);
-  const result = getNPrime(nPrime);
-  printResult("nPrimeMainResult", nPrime, result);
+	const nPrime = parseInt(nPrimeMainInput.value);
+	const result = getNPrime(nPrime);
+	printResult("nPrimeMainResult", nPrime, result);
 };
 
 nPrimeWorkerButton.onclick = () => {
-  const nPrime = parseInt(nPrimeWorkerInput.value);
+	const nPrime = parseInt(nPrimeWorkerInput.value);
 
-  myWorker.postMessage(nPrime);
+	myWorker.postMessage(nPrime);
 
-  myWorker.onmessage = (e) => {
-    printResult("nPrimeWorkerResult", nPrime, e.data);
-  };
+	myWorker.onmessage = (e) => {
+		printResult("nPrimeWorkerResult", nPrime, e.data);
+	};
 };
