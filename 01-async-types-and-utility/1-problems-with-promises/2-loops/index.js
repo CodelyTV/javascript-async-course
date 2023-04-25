@@ -1,14 +1,14 @@
 function processElement(time, index) {
-	return new Promise((resolve) =>
+	return new Promise((resolve) => {
 		setTimeout(() => {
 			console.log(`${index}: element processed`);
 			resolve(index);
-		}, time)
-	);
+		}, time);
+	});
 }
 
 async function processAllData(data) {
-	array.forEach(async (element, index) => {
+	data.forEach(async (element, index) => {
 		await processElement(element, index);
 	});
 

@@ -1,5 +1,7 @@
 function promise() {
-	return new Promise((resolve) => resolve());
+	return new Promise((resolve) => {
+		resolve();
+	});
 }
 
 function test() {
